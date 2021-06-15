@@ -83,5 +83,10 @@ Kemudian buat folder template pada direktori view kemudian buat file ```header.p
 # Pertanyaan dan Tugas
 Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
 
-
-
+# Hasil tugas
+* Tampilan page about
+![19 11](https://user-images.githubusercontent.com/56240851/122084266-87bd3c80-cdb6-11eb-878b-7f172a139d02.png)
+* Tampilan page artikel
+![20 11](https://user-images.githubusercontent.com/56240851/122084279-8ab82d00-cdb6-11eb-840f-94be3a5a9c13.png)
+* Tampilan page contact
+![21 11](https://user-images.githubusercontent.com/56240851/122084296-8db31d80-cdb6-11eb-9a6c-b1bd315a28aa.png)
