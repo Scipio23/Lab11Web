@@ -80,6 +80,16 @@ tr:hover{
     background: #e7e7e7;
 }
 
+.pembuat{
+    position: fixed;
+    font-size: 60px;
+    color: #000000;
+    top: 260px;
+    left: 520px;
+    opacity: 0.1;
+    -webkit-transform: rotate(-40deg);
+}
+
 /* ADMIN TOMBOL */
 .btn{
     font-size: 14px;
