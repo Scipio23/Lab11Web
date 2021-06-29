@@ -217,6 +217,16 @@ box img {
 
 }
 
+.pembuat{
+    position: fixed;
+    font-size: 60px;
+    color: #000000;
+    top: 340px;
+    left: 520px;
+    opacity: 0.1;
+    -webkit-transform: rotate(-40deg);
+}
+
 /* entry */
 .entry {
     margin: 15px 0;
