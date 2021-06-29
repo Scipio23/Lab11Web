@@ -1,3 +1,7 @@
+<?php
+
+use App\Controllers\User;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,7 @@
 </head>
 <body>
     <div id="container">
+    <div class="pembuat">Scipio Rifky Yulianto</div>
     <header>
         <h1>Halaman Admin</h1>
     </header>
@@ -14,5 +19,6 @@
         <a href="<?= base_url('/admin/artikel');?>" class="active">Dashboard</a>
         <a href="<?= base_url('/artikel');?>">Artikel</a>
         <a href="<?= base_url('/admin/artikel/add');?>">Tambah Artikel</a>
+        <a href="<?= base_url('/admin/logout');?>">Logout</a>
     </nav>
     <section id="wrapper">
