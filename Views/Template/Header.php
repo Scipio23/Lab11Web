@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="container">
+    <div class="pembuat">Scipio Rifky Yulianto</div>
     <header>
         <h1>Layout Sederhana</h1>
     </header>
@@ -15,6 +16,7 @@
         <a href="<?= base_url('/artikel');?>">Artikel</a>
         <a href="<?= base_url('/about');?>">About</a>
         <a href="<?= base_url('/contact');?>">Kontak</a>
+        <a href="<?= base_url('/admin/artikel');?>">Admin</a>
     </nav>
     <section id="wrapper">
         <section id="main">
