@@ -189,6 +189,8 @@ Kelas : TI.19.A.2
 ![7 13](https://user-images.githubusercontent.com/56240851/123824641-15b71e00-d8b3-11eb-8545-13436b1dccb0.png)
 * Lalu buka CLI lagi dan ketik perintah berikut: ```php spark db:seed UserSeeder```
 ![8 13](https://user-images.githubusercontent.com/56240851/123824681-1e0f5900-d8b3-11eb-9f56-69b52ac1623f.png)
+Tambahkan CSS untuk mempercantikan tampilan login. Buka file ```style.css``` pada direktori ```ci4\public\style.css```
+![s 13](https://user-images.githubusercontent.com/56240851/123835107-01781e80-d8bd-11eb-8ac9-2bcc46cf5255.png)
 * Kemudian lakukan uji coba login dengan mengakses url : http://localhost:8080/user/login
 ![9 13](https://user-images.githubusercontent.com/56240851/123824712-236ca380-d8b3-11eb-9bc7-6ab77d75e812.png)
 # Langkah 5 - Menambah Auth Filter
