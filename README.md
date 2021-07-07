@@ -196,11 +196,14 @@ Tambahkan CSS untuk mempercantikan tampilan login. Buka file ```style.css``` pad
 # Langkah 5 - Menambah Auth Filter
 * Buat file baru dengan nama Auth.php pada direktori app/Filters untuk memfilter halaman admin.
 ![10 13](https://user-images.githubusercontent.com/56240851/123824733-28315780-d8b3-11eb-8c24-b68c869a98ec.png)
+
 * Kemudian buka file app/Config/Filters.php tambahkan kode berikut:
+
 ![11 13](https://user-images.githubusercontent.com/56240851/123825355-b279bb80-d8b3-11eb-9c2d-6224270b7363.png)
 * Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
 ![12 13](https://user-images.githubusercontent.com/56240851/123825415-befe1400-d8b3-11eb-8c1d-24e33477f629.png)
 # Langkah 6 - Fungsi Logout
+
 * Tambahkan method logout pada ```Controller User``` seperti berikut:
 ![13 13](https://user-images.githubusercontent.com/56240851/123825446-c45b5e80-d8b3-11eb-9ed9-551710a3101b.png)
 * Tambahkan menu logout di header admin. Ke ```direktori app\view\template``` lalu buka file ```admin_header.php``` tambahkan kode berikut
@@ -212,3 +215,42 @@ Tambahkan CSS untuk mempercantikan tampilan login. Buka file ```style.css``` pad
 ![9 13](https://user-images.githubusercontent.com/56240851/123824712-236ca380-d8b3-11eb-9bc7-6ab77d75e812.png)
 * Tampilan setelah akses login
 ![16 13](https://user-images.githubusercontent.com/56240851/123825531-d50bd480-d8b3-11eb-9cab-76fdc75c4b7e.png)
+
+
+# Praktikum 14 - Lanjutan Codeigniter - Pemrograman Web
+```
+Nama  : Scipio Rifky Yulianto
+NIM   : 311910396
+Kelas : TI.19.A.2
+```
+
+# Langkah 1 - Membuat Pagination
+Pagination digunakan untuk membatasi tampilan data pada sebuah halaman menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan.
+* Untuk membuat pagination Codeigniter 4, buka kembali **Controller Artikel**, kemudian modifikasi kode pada method **admin_index** seperti berikut.
+
+![1 14](https://user-images.githubusercontent.com/56240851/124706685-90cc9580-deac-11eb-8689-5b037b4f8040.png)
+* Kemudian buka file **views/artikel/admin_index.php** dan tambahkan kode berikut dibawah deklarasi tabel data.
+![2 14](https://user-images.githubusercontent.com/56240851/124706698-9629e000-deac-11eb-99f2-5f3a92f1adb7.png)
+* Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+![3 14](https://user-images.githubusercontent.com/56240851/124706736-a04bde80-deac-11eb-8b3d-80ad03e41feb.png)
+# Langkah 2 - Membuat Pencarian
+* Pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buka kembali **Controller Artikel**, pada method **admin_index** ubah kodenya seperti berikut
+![4 14](https://user-images.githubusercontent.com/56240851/124706766-a93cb000-deac-11eb-80b0-ebbeecad095b.png)
+* Kemudian buka kembali file ```views/artikel/admin_index.php``` dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut.
+![5 14](https://user-images.githubusercontent.com/56240851/124706779-ac37a080-deac-11eb-9588-1442de7e06cd.png)
+
+* Dan pada link pager ubah seperti berikut.
+
+![6 14](https://user-images.githubusercontent.com/56240851/124710488-b5773c00-deb1-11eb-8353-f55de6c41654.png)
+* Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+![7 14](https://user-images.githubusercontent.com/56240851/124706802-b3f74500-deac-11eb-8be4-6b5d48bfd7d9.png)
+# Langkah 3 - Upload Gambar
+* Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel ```(htdocs\lab11_php_ci\ci4\Controllers\Artikel.php)```, sesuaikan kode pada method add seperti berikut:
+![8 14](https://user-images.githubusercontent.com/56240851/124706820-b78acc00-deac-11eb-8489-930b0cbb5e1d.png)
+* Kemudian pada file ```views/artikel/form_add.php``` tambahkan field input file serta sesuaikan tag form dengan menambahkan ```ecrypt type <form action="" method="post" enctype="multipart/form-data">``` dan tambahkan field input file:
+![9 14](https://user-images.githubusercontent.com/56240851/124706833-be194380-deac-11eb-9d9e-6042c9c29eb3.png)
+* Lalu melakukan uji coba menambahkan artikel dengan upload gambar :
+![10 14](https://user-images.githubusercontent.com/56240851/124709493-667cd700-deb0-11eb-8eac-7dea3308e01b.png)
+* Berikut artikel yang dibuat dengan upload gambar :
+![11 14](https://user-images.githubusercontent.com/56240851/124706891-d721f480-deac-11eb-8e48-aa36a01f3b32.png)
+
