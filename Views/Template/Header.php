@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title><?= $title; ?></title>
     <link rel="stylesheet" href="<?= base_url('/style.css');?>">
+    <link rel="shortcut icon" href="<?= base_url('/R.png');?>">
 </head>
 <body>
     <div id="container">
-    <div class="pembuat">Scipio Rifky Yulianto</div>
+    <div class="pembuat">Rofi Ismail</div>
     <header>
+        <img width="75" height="75" alt="" class="header-image" src="<?= base_url('/R.png');?>">
         <h1>Layout Sederhana</h1>
     </header>
     <nav>
