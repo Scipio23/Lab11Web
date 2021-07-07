@@ -64,28 +64,28 @@ nav a:hover {
     line-height: 25px;
 }
 
-/* Introduce Panel */
-#introduce{
+/* About Panel */
+#about{
     background-color: #e4e4e5;
     padding: 50px 20px;
     margin-bottom: 20px;
 }
-#introduce h1 {
+#about h1 {
     margin-bottom: 10px;
     font-size: 35px;
     position: relative;
-    left: 20px;
+    left: 15px;
 }
-#introduce p {
+#about p {
     margin-bottom: 20px;
     font-size: 18px;
     padding: 30px;
     line-height: 25px;
     position: relative;
-    left: 20px;
+    left: 15px;
 }
 
-/* Contact Panel */
+/* Kontak Panel */
 #kontak{
     background-color: #e4e4e5;
     padding: 20px 20px;
@@ -108,9 +108,8 @@ button{
     padding: 10px 20px;
     margin-top: 8x;
 }
-#kontak button.active,
-#kontak button:hover{
-    background: #6e6e6e;
+button :hover{
+    opacity: 0,9;
 }
 
 /* main content */
@@ -125,59 +124,59 @@ button{
 
 /* sidebar area */
 #sidebar {
-    float: right;
+    float: left;
     width: 260px;
     padding: 20px;
 }
 
 /* widget */
 .widget-box {
-    border: 1px solid #eee;
-    margin-bottom: 20px;
+    border:1px solid #eee;
+    margin-bottom:20px;
 }
 .widget-box .title {
-    padding: 10px 16px;
-    background-color: #428bca;
-    color: #fff;
+    padding:10px 16px;
+    background-color:#428bca;
+    color:#fff;
 }
 .widget-box ul {
     list-style-type:none;
 }
 .widget-box li {
-    border-bottom: 1px solid  #eee;
+    border-bottom:1px solid #eee;
 }
 .widget-box li a {
-    padding: 10px 16px;
-    color: #333;
-    display: block;
-    text-decoration: none;
+    padding:10px 16px;
+    color:#333;
+    display:block;
+    text-decoration:none;
 }
 .widget-box li:hover a {
-    background-color: #eee;
+    background-color:#eee;
 }
 .widget-box p {
-    padding: 15px;
-    line-height: 25px;
+    padding:15px;
+    line-height:25px;
 }
 
 /* footer */
 footer {
-    clear: both;
-    background-color: #1d1d1d;
-    padding: 20px;
-    color:  #eee
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
 }
 
 /* box */
 .box {
-    display: block;
-    float: left;
-    width: 33.333333%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    padding: 0 10px;
-    text-align: center;
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
 }
 .box h3 {
     margin: 15px 0;
@@ -202,36 +201,24 @@ box img {
 }
 .row:after, .row:before,
 .entry:after, .entry:before {
-    content: '';
-    display: table;
+    content:'';
+    display:table;
 }
 .row:after,
 .entry:after {
-    clear: both;
+    clear:both;
 }
 
 .divider {
     border:0;
     border-top:1px solid #eeeeee;
     margin:40px 0;
-
 }
-
-.pembuat{
-    position: fixed;
-    font-size: 60px;
-    color: #000000;
-    top: 340px;
-    left: 520px;
-    opacity: 0.1;
-    -webkit-transform: rotate(-40deg);
-}
-
 /* entry */
-.entry {
+   .entry {
     margin: 15px 0;
 }
-.entry h2 {
+   .entry h2 {
     margin-bottom: 20px;
 }
 .entry p {
@@ -263,4 +250,43 @@ box img {
     float: left;
     width: 500px;
     padding: 10px;
+}
+
+/* Login Wrapper */
+#login-wrapper {
+    align-items: center;
+    width: 500px;
+    margin: 10px;
+    margin-left: 30%;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 1em #cccccc;
+}
+
+/* Isi */
+h1{
+    margin-bottom: 20px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button[type=submit]{
+    padding: 7px;
+    color: white;
+    background-color: rgb(44, 118, 148);
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+button[type=submit]:active,
+button[type=submit]:hover{
+    opacity: 75%;
 }
